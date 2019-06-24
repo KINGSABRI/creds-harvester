@@ -1,7 +1,21 @@
 # creds-harvester
 A simple, yet highly customizable, script to use with cloned website for phishing and credentials harvesting.
 
-Collected Credentials will be stored in `credentials.txt` file. The `credentials.txt` is not accessable publicly as there is no route to it, test it.
+
+
+## Stored data
+Collected credentials will be stored in `credentials.txt` file. The `credentials.txt` is not accessable publicly as there is no route to it, test it.
+
+**Stored Data**
+- Collection time
+- Username
+- Password
+- Remote Client's IP address
+
+**Format**
+```
+YY-MM-DD HH:MM | USERNAME : PASSWORD : CLIENT_IPADD
+```
 
 ## Requirements 
 This script uses Sinatra framework as web application server. I also recommend to use `rerun` command to run the code as `rerun` watches the chanes on the file and restart it again, so you don't have to interrupt the service.
