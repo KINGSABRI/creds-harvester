@@ -70,7 +70,7 @@ end
 **Redirect after submitting**
 
 Also, you can redirect the users once they submit their credentials to the cloned website or other of your choice.
-```
+```ruby
 redirect 'https://google.com'
 ```
 
