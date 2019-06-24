@@ -82,7 +82,7 @@ rerun 'ruby login.rb'
 ```
 
 #### Step #5 (optional - recommended)
-Sometime the fishing website is just a small part of many websites on the serve. 
+Sometime the phishing website is just a small part of many websites on the server. 
 
 If you want to run it with nginx, you can make nginx as reverse proxy for the application. 
 
