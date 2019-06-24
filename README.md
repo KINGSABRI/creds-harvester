@@ -31,7 +31,7 @@ gem install sinatra rerun
 Put your cloned website under `view` directory
 
 #### Step #2 
-Find the input id from within the cloned from you want to use (case sensitive).
+Find the input id from within the cloned login form you want to use (case sensitive).
 Example: 
 ```html
 <!DOCTYPE html>
