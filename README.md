@@ -1,5 +1,5 @@
 # creds-harvester
-A simple script to use with cloned website for phishing and credentials harvesting.
+A simple, yet highly customizable, script to use with cloned website for phishing and credentials harvesting.
 
 Collected Credentials will be stored in `credentials.txt` file. The `credentials.txt` is not accessable publicly as there is no route to it, test it.
 
