@@ -38,8 +38,8 @@ Example:
 </html>
 ```
 
-- Input for user is: UserName
-- Input for pass is: Password
+- Parameter id for user is: UserName
+- Parameter id for pass is: Password
 
 #### Step #3
 Go edit `login.rb` script and add the parameter ID's 
