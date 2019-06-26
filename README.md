@@ -1,16 +1,16 @@
 # creds-harvester
 A simple, yet highly customizable, script to use with cloned website for phishing and credentials harvesting.
 
-- [creds-harvester](#creds-harvester)
-  - [Stored data](#Stored-data)
-  - [Requirements](#Requirements)
-    - [Install gems](#Install-gems)
-  - [How to use?](#How-to-use)
-      - [Step #1](#Step-1)
-      - [Step #2](#Step-2)
-      - [Step #3](#Step-3)
-      - [Step #4](#Step-4)
-      - [Step #5 (optional - recommended)](#Step-5-optional---recommended)
+## Table of Contents
+- [Stored data](#Stored-data)
+- [Requirements](#Requirements)
+  - [Install gems](#Install-gems)
+- [How to use?](#How-to-use)
+  - [Step #1](#Step-1)
+  - [Step #2](#Step-2)
+  - [Step #3](#Step-3)
+  - [Step #4](#Step-4)
+  - [Step #5 (optional - recommended)](#Step-5-optional---recommended)
 
 ## Stored data
 Collected credentials will be stored in `credentials.txt` file. The `credentials.txt` is not accessable publicly as there is no route to it, test it.
