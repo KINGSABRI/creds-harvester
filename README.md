@@ -65,7 +65,7 @@ Example:
 
 - Parameter id for user is: UserName
 - Parameter id for pass is: Password
-
+- Change the "Action" attributes to be `"/login"`  as of we have in the login.rb file
 #### Step #3
 Go edit `login.rb` script and add the parameter ID's 
 ```ruby
