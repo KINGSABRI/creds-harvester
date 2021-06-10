@@ -10,7 +10,7 @@ require 'bundler/inline'
 begin
   require 'sinatra'
   require 'logger'
-rescue => exception
+rescue Exception => e
   gemfile do
     source 'https://rubygems.org'
     gem 'sinatra', require: 'sinatra'
