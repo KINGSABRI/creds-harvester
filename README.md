@@ -31,7 +31,7 @@ This script uses Sinatra framework as web application server. I also recommend t
 
 ### Install gems
 ```
-gem install sinatra rerun
+gem install sinatra rerun bundle
 ```
 
 ## How to use?
